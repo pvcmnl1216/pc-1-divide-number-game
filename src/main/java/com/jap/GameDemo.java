@@ -4,12 +4,13 @@ public class GameDemo {
 
     public String divideByNumber(int firstNumber, int secondNumber){
         //create local variable
-        int finalNumber = 0;
+        int finalNumber ;
         try {
             //write logic
-
+             finalNumber = firstNumber/secondNumber;
+            System.out.println("finalNumber1 = " + finalNumber);
             //Handle specific exception
-        }catch (Exception exception){
+        }catch (ArithmeticException exception){
           return exception.toString();
         }
         return String.valueOf(finalNumber);
